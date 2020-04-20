@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(3, 108, 255, 0.6),
+      rgba(196, 131, 0, 0.3)
+    ),
+    url('./images/oldTown.png');
+  background-size: cover;
+  background-position: center; /*top...*/
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.logoBox {
+  position: absolute;
+  left: 40px;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+}
+
+.headingText {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.primaryText {
+  font-size: 1.5em;
+  display: block;
+  letter-spacing: 11px;
+  text-align: center;
+}
+
+.secondaryText {
+  font-size: 0.5em;
+  display: block;
+  letter-spacing: 15px;
+  text-align: center;
+}
