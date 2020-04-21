@@ -28,7 +28,7 @@ body {
 
 .logoBox {
   position: absolute;
-  left: 40px;
+  left: 60px;
 }
 
 .logo {
@@ -52,6 +52,9 @@ body {
   display: block;
   letter-spacing: 11px;
   text-align: center;
+
+  animation: moveFromRight;
+  animation-duration: 3s;
 }
 
 .secondaryText {
@@ -59,4 +62,31 @@ body {
   display: block;
   letter-spacing: 15px;
   text-align: center;
+
+  animation: moveFromLeft;
+  animation-duration: 3s;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
