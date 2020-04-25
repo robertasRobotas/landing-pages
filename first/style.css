@@ -161,7 +161,7 @@ body {
 
 .youtubePlayer {
   width: 95%;
-  height: 45vh;
+  height: 70vh;
   margin: auto;
   padding-top: 2rem;
 }
@@ -179,9 +179,11 @@ body {
 .plan {
   display: inline-block;
   margin: 2rem;
+  margin-left: 5%;
+  margin-right: 5%;
   background-color: green;
-  height: 20rem;
-  width: 15rem;
+  height: 35rem;
+  width: 22rem;
 }
 
 .priceText {
@@ -190,4 +192,8 @@ body {
   padding-top: 12vh;
   padding-bottom: 8vh;
   letter-spacing: 8px;
+}
+
+.contactsPage {
+  height: 97vh;
 }
