@@ -210,6 +210,7 @@ body {
 }
 
 .contactsPage {
+  position: relative;
   height: 97vh;
   background-image: url('./images/noise.png');
 }
@@ -277,4 +278,33 @@ body {
   bottom: 7px;
   left: 1px;
   font-size: 0.7rem;
+}
+
+.contactsInfo {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  background-color: blueviolet;
+  display: inline-block;
+  color: white;
+}
+
+.leftContactInfo {
+  float: left;
+  height: 100px;
+  width: 150px;
+  background-color: red;
+  text-align: right;
+  padding: 1em;
+}
+
+.rightContactInfo {
+  float: right;
+  height: 100px;
+  width: 150px;
+  background-color: blue;
+  padding: 1em;
 }
