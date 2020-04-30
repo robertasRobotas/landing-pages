@@ -136,7 +136,7 @@ body {
 }
 
 .examplesPage {
-  background-color: rgb(248, 248, 248);
+  background-image: url('./images/noise.png');
   padding-bottom: 10vh;
 }
 
@@ -153,7 +153,6 @@ body {
 }
 
 .portfolioWrapper {
-  background-color: aqua;
   margin: 2rem;
   display: grid;
   padding-bottom: 2rem;
@@ -167,7 +166,7 @@ body {
 }
 
 .pricePage {
-  background-color: rgb(248, 248, 0);
+  background-image: url('./images/noise.png');
   padding-bottom: 10vh;
 }
 
@@ -187,6 +186,7 @@ body {
   background-color: green;
   height: 35rem;
   width: 22rem;
+  border-radius: 3px;
 }
 
 .priceText {
@@ -199,6 +199,7 @@ body {
 
 .contactsPage {
   height: 97vh;
+  background-image: url('./images/noise.png');
 }
 
 .planTitle {
