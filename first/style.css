@@ -240,12 +240,18 @@ body {
 }
 
 .currencySign {
+  position: relative;
+  left: 4px;
+  top: 9px;
   font-size: 1rem;
   vertical-align: top;
   font-weight: 900;
 }
 
 .timeUnit {
+  position: relative;
+  letter-spacing: 1px;
+  right: 3px;
   font-size: 1rem;
   font-weight: 900;
 }
@@ -253,6 +259,13 @@ body {
 .additionalPrice {
   position: relative;
   font-size: 1.5rem;
-  top: -0.5rem;
-  left: 0.8rem;
+  bottom: 3px;
+  right: 5px;
+}
+
+.additionalPriceCurrencySign {
+  position: relative;
+  bottom: 7px;
+  left: 1px;
+  font-size: 0.7rem;
 }
