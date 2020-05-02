@@ -202,11 +202,12 @@ body {
 }
 
 .priceText {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   padding-top: 12vh;
   padding-bottom: 8vh;
   letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
 .contactsPage {
@@ -281,30 +282,30 @@ body {
 }
 
 .contactsInfo {
+  box-sizing: border-box;
   position: absolute;
-  height: 300px;
+  letter-spacing: 2px;
+  height: 80px;
   width: 300px;
+  font-size: 1.2rem;
   left: 50%;
   top: 50%;
   transform: translateX(-50%);
-  background-color: blueviolet;
   display: inline-block;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .leftContactInfo {
   float: left;
-  height: 100px;
-  width: 150px;
-  background-color: red;
+  height: 80px;
+  width: 149px;
   text-align: right;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .rightContactInfo {
   float: right;
-  height: 100px;
-  width: 150px;
-  background-color: blue;
-  padding: 1em;
+  height: 80px;
+  width: 149px;
+  padding: 0.5em;
 }
