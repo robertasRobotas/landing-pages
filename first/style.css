@@ -6,6 +6,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,11 +32,14 @@ body {
 .logoBox {
   position: absolute;
   left: 6rem;
+  top: 6rem;
+  animation: moveFromUp;
+  animation-duration: 3s;
 }
 
 .logo {
-  height: 15rem;
-  width: 15rem;
+  height: 8rem;
+  width: 8rem;
 }
 
 .headingText {
@@ -67,6 +71,18 @@ body {
 
   animation: moveFromLeft;
   animation-duration: 3s;
+}
+
+@keyframes moveFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 @keyframes moveFromLeft {
