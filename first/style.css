@@ -108,6 +108,7 @@ body {
   position: absolute;
   left: 50%;
   top: 52%;
+  width: 200px;
   transform: translate(-50%, -50%);
   text-decoration: none;
   color: rgb(77, 77, 77);
@@ -115,7 +116,7 @@ body {
   padding: 0.5rem 2rem;
   border-radius: 1.5rem;
   text-transform: lowercase;
-  font-size: 1.4rem;
+  font-size: 14px;
   letter-spacing: 0.5rem;
   display: inline-block;
   transition: 0.2s;
@@ -140,18 +141,6 @@ body {
   padding-bottom: 10vh;
 }
 
-.examplesText {
-  font-size: 4rem;
-  text-align: center;
-  padding-top: 25vh;
-  padding-bottom: 8vh;
-  letter-spacing: 8px;
-}
-
-.examplesTitle {
-  font-size: 4rem;
-}
-
 .portfolioWrapper {
   margin: 2rem;
   display: grid;
@@ -171,6 +160,7 @@ body {
 }
 
 .plansWrapper {
+  display: block;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-image: linear-gradient(
@@ -184,24 +174,23 @@ body {
 }
 
 .plan {
+  display: inline-block;
   position: relative;
   vertical-align: top;
   box-sizing: border-box;
-  display: inline-block;
   margin: 2rem;
   padding: 1rem;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
   background-color: rgb(248, 248, 248);
   color: black;
   height: 35rem;
   width: 22rem;
   border-radius: 6px;
-  box-sizing: border-box;
   border: 1px solid rgb(211, 211, 211);
 }
 
-.priceText {
+.pageText {
   font-size: 3rem;
   text-align: center;
   padding-top: 12vh;
@@ -293,6 +282,7 @@ body {
   transform: translateX(-50%);
   display: inline-block;
   color: rgb(0, 0, 0);
+  line-height: 25px;
 }
 
 .leftContactInfo {
@@ -308,4 +298,23 @@ body {
   height: 80px;
   width: 149px;
   padding: 0.5em;
+}
+
+@media only screen and (max-width: 900px) {
+  .plan {
+    display: block;
+    margin: auto;
+    margin-bottom: 10rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .primaryText {
+    font-size: 2.5rem;
+  }
+
+  .secondaryText {
+    font-size: 0.55em;
+    letter-spacing: 11px;
+  }
 }
