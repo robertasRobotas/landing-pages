@@ -15,6 +15,10 @@
       document.addEventListener('contextmenu', (event) =>
         event.preventDefault()
       );
+
+      function scroll() {
+        console.log('scroll');
+      }
     </script>
 
     <header class="headerPage">
@@ -25,10 +29,10 @@
         <span class="primaryText">PADANGESE</span>
         <span class="secondaryText">FILMAVIMAS DRONU</span>
       </h1>
-      <a href="#" class="headingButton">See Examples</a>
+      <a href="#examplesPage" class="headingButton">See Examples</a>
     </header>
 
-    <section class="examplesPage">
+    <section class="examplesPage" id="examplesPage">
       <h1 class="pageText">
         <span class="pageTitle">SOME FOOTAGE</span>
       </h1>
