@@ -289,25 +289,27 @@ body {
 .contactsInfo {
   box-sizing: border-box;
   position: absolute;
+  text-align: center;
   letter-spacing: 2px;
   height: 80px;
   width: 300px;
   font-size: 1.2rem;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translateX(-50%);
   display: inline-block;
   color: rgb(0, 0, 0);
-  line-height: 25px;
-  background-color: red;
+  line-height: 30px;
 }
 
 .socialLinks {
   text-align: center;
-  background-color: blue;
+}
+.socialLink {
+  text-decoration: none;
 }
 
-.socialLink {
+.socialLinkImage {
   height: 20px;
   width: 20px;
   margin-left: 4%;
