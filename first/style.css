@@ -38,8 +38,8 @@ body {
 }
 
 .logo {
-  height: 7rem;
-  width: 7rem;
+  height: 6.5rem;
+  width: 6.5rem;
 }
 
 .headingText {
@@ -76,12 +76,12 @@ body {
 @keyframes moveFromUp {
   0% {
     opacity: 0;
-    transform: translateY(10rem);
+    transform: translateY(8rem) rotate(-120deg);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(0deg);
   }
 }
 
@@ -172,7 +172,8 @@ body {
 
 .pricePage {
   background-image: url('./images/noise.png');
-  padding-bottom: 10vh;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
 }
 
 .plansWrapper {
@@ -298,7 +299,7 @@ body {
   transform: translateX(-50%);
   display: inline-block;
   color: rgb(0, 0, 0);
-  line-height: 35px;
+  line-height: 55px;
 }
 
 .socialLinks {
