@@ -14,7 +14,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 3vh;
+  padding: 2rem;
 }
 
 .headerPage {
@@ -27,12 +27,13 @@ body {
     url('./images/oldTown.png');
   background-size: cover;
   background-position: center; /*top...*/
+  background-attachment: fixed;
 }
 
 .logoBox {
   position: absolute;
-  left: 10rem;
-  top: 10rem;
+  left: 7rem;
+  top: 7rem;
   animation: moveFromUp;
   animation-duration: 3s;
 }
@@ -51,6 +52,10 @@ body {
   padding: 0.5rem;
   text-align: center;
   border-radius: 0.5rem;
+
+  transform-style: preserve-3d;
+
+  overflow-y: scroll;
 }
 
 .primaryText {
@@ -303,7 +308,7 @@ body {
   transform: translateX(-50%);
   display: inline-block;
   color: rgb(0, 0, 0);
-  line-height: 55px;
+  line-height: 75px;
 }
 
 .socialLinks {
