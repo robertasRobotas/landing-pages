@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Vollkorn', serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
@@ -54,7 +54,7 @@ body {
 }
 
 .primaryText {
-  font-size: 4.5rem;
+  font-size: 4rem;
   display: block;
   letter-spacing: 1.5rem;
   text-align: center;
@@ -64,9 +64,9 @@ body {
 }
 
 .secondaryText {
-  font-size: 0.65em;
+  font-size: 0.55em;
   display: block;
-  letter-spacing: 1.75rem;
+  letter-spacing: 1.6rem;
   text-align: center;
 
   animation: moveFromLeft;
@@ -122,6 +122,7 @@ body {
 .headingButton:link,
 .headingButton:visited {
   position: absolute;
+  text-align: center;
   left: 50%;
   top: 52%;
   width: 200px;
@@ -153,6 +154,7 @@ body {
 }
 
 .examplesPage {
+  padding-top: 10vh;
   background-image: url('./images/noise.png');
   padding-bottom: 10vh;
 }
@@ -165,7 +167,7 @@ body {
 
 .youtubePlayer {
   width: 95%;
-  height: 70vh;
+  height: 55vh;
   margin: auto;
   padding-top: 2rem;
 }
@@ -208,15 +210,17 @@ body {
 }
 
 .pageText {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   padding-top: 12vh;
   padding-bottom: 8vh;
   letter-spacing: 8px;
   text-transform: uppercase;
+  color: black;
 }
 
 .contactsPage {
+  padding-top: 10vh;
   position: relative;
   height: 97vh;
 }
@@ -290,7 +294,7 @@ body {
   box-sizing: border-box;
   position: absolute;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   height: 80px;
   width: 300px;
   font-size: 1.2rem;
@@ -334,5 +338,3 @@ body {
     letter-spacing: 11px;
   }
 }
-
-/* font-family: avenir-lt-w01_35-light1475496, sans-serif; */
