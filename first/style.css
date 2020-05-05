@@ -18,6 +18,7 @@ body {
 }
 
 .headerPage {
+  position: relative;
   height: 94vh;
   background-image: linear-gradient(
       to right bottom,
@@ -28,13 +29,14 @@ body {
   background-size: cover;
   background-position: center; /*top...*/
   background-attachment: fixed;
+  min-height: 600px;
 }
 
 .logoBox {
   position: absolute;
-  left: 7rem;
-  top: 7rem;
-  animation: moveFromUp;
+  left: 6.5vh;
+  top: 6.5vh;
+  animation: moveUp;
   animation-duration: 3s;
 }
 
@@ -78,7 +80,7 @@ body {
   animation-duration: 3s;
 }
 
-@keyframes moveFromUp {
+@keyframes moveUp {
   0% {
     opacity: 0;
     transform: translateY(8rem) rotate(-120deg);
@@ -87,6 +89,18 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes moveUpCenter {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(8rem) rotate(-120deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px) rotate(0deg);
   }
 }
 
@@ -341,5 +355,19 @@ body {
   .secondaryText {
     font-size: 0.55em;
     letter-spacing: 11px;
+  }
+
+  .logoBox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 6.5vh;
+    animation: moveUpCenter;
+    animation-duration: 3s;
+  }
+
+  .logo {
+    height: 4.5rem;
+    width: 4.5rem;
   }
 }
