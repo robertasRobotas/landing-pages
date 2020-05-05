@@ -38,8 +38,8 @@ body {
 }
 
 .logo {
-  height: 8rem;
-  width: 8rem;
+  height: 7rem;
+  width: 7rem;
 }
 
 .headingText {
@@ -218,7 +218,6 @@ body {
 .contactsPage {
   position: relative;
   height: 97vh;
-  background-image: url('./images/noise.png');
 }
 
 .planTitle {
@@ -299,7 +298,7 @@ body {
   transform: translateX(-50%);
   display: inline-block;
   color: rgb(0, 0, 0);
-  line-height: 30px;
+  line-height: 35px;
 }
 
 .socialLinks {
