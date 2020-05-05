@@ -16,8 +16,11 @@
       //   event.preventDefault()
       // );
 
+      let headerText = document.getElementsByClassName('headingText');
+      console.log(headerText);
+
       window.addEventListener('scroll', () => {
-        console.log('scroll');
+        headerText[0].style.transform = `translate(-50%, calc(-50% - (${window.pageYOffset}px)/3))`;
       });
     </script>
 
