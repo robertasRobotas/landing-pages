@@ -20,11 +20,15 @@
         event.preventDefault()
       );
 
+      let portfolioButton = document.getElementsByClassName('headingButton');
       let headerText = document.getElementsByClassName('headingText');
-      console.log(headerText);
 
       window.addEventListener('scroll', () => {
         headerText[0].style.transform = `translate(-50%, calc(-50% - (${window.pageYOffset}px)/3))`;
+        portfolioButton[0].style.opacity = `calc( 1000 / ( ${window.pageYOffset} * 8 ) - 0.2 )`;
+        portfolioButton[0].style.transform = `translate(-50%, calc(-50% - (${window.pageYOffset}px)/4))`;
+
+        console.log(portfolioButton[0].getBoundingClientRect());
       });
     </script>
 
