@@ -176,7 +176,14 @@ body {
 
 .examplesPage {
   padding-top: 10vh;
-  background-image: url('./images/noise.png');
+  background: rgb(33, 33, 33);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(8, 31, 53, 1) 65%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
   padding-bottom: 10vh;
 }
 
