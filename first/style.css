@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: 'Vollkorn', serif;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.7;
   color: #777;
   padding: 2rem;
@@ -140,19 +140,21 @@ body {
 
 .headingButton:link,
 .headingButton:visited {
+  font-family: 'Noto Serif', serif;
   position: absolute;
   text-align: center;
   left: 50%;
-  top: 52%;
+  top: 60%;
   width: 200px;
   transform: translate(-50%, -50%);
   text-decoration: none;
-  color: rgb(77, 77, 77);
-  background-color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(255, 255, 255);
   padding: 0.5rem 2rem;
   border-radius: 1.5rem;
   text-transform: lowercase;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.5rem;
   display: inline-block;
   transition: 0.2s;
@@ -162,9 +164,9 @@ body {
 }
 
 .headingButton:hover {
-  transform: translate(-50%, -53%);
+  transform: translate(-50%, -52%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  font-size: 1.42rem;
+  font-size: 13px;
 }
 
 .headingButton:active {
@@ -279,12 +281,12 @@ body {
 }
 
 .currencySign {
+  font-family: 'Noto Serif', serif;
   position: relative;
   left: 4px;
   top: 9px;
   font-size: 1rem;
   vertical-align: top;
-  font-weight: 900;
 }
 
 .timeUnit {
@@ -296,6 +298,7 @@ body {
 }
 
 .additionalPrice {
+  font-family: 'Noto Serif', serif;
   position: relative;
   font-size: 1.5rem;
   bottom: 3px;
@@ -303,6 +306,7 @@ body {
 }
 
 .additionalPriceCurrencySign {
+  font-family: 'Noto Serif', serif;
   position: relative;
   bottom: 7px;
   left: 1px;
@@ -313,7 +317,7 @@ body {
   box-sizing: border-box;
   position: absolute;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
   height: 80px;
   width: 300px;
   font-size: 1.2rem;
@@ -322,7 +326,7 @@ body {
   transform: translateX(-50%);
   display: inline-block;
   color: rgb(0, 0, 0);
-  line-height: 75px;
+  line-height: 100px;
 }
 
 .socialLinks {
