@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+  line-height: 1.7;
+  color: #777;
+  padding: 2rem;
+}
+
+.headerPage {
+  position: relative;
+  height: 94vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(3, 108, 255, 0.6),
+      rgba(196, 131, 0, 0.3)
+    ),
+    url('./images/oldTown.png');
+  background-size: cover;
+  background-position: center; /*top...*/
+  background-attachment: fixed;
+  min-height: 600px;
+}
