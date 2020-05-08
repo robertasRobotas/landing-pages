@@ -19,4 +19,5 @@ body {
 .headerPage {
   height: 100vh;
   background-color: black;
+  background-image: url('./binding-dark.png');
 }
