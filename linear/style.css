@@ -18,14 +18,14 @@ body {
 
 .headerPage {
   height: 100vh;
-  background: linear-gradient(110deg, #fdcd3b 50%, #d45f5f 50%);
+  background: linear-gradient(110deg, #dfbb51 50%, #be5252 50%);
 }
 
 .headingImage {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 200px;
-  filter: drop-shadow(5px 5px 5px #222222);
+  filter: drop-shadow(3px 3px 5px #000000);
 }
