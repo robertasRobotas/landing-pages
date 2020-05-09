@@ -18,5 +18,5 @@ body {
 
 .headerPage {
   height: 100vh;
-  background-color: black;
+  background: linear-gradient(110deg, #fdcd3b 50%, #d45f5f 50%);
 }
