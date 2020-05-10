@@ -29,3 +29,14 @@ body {
   height: 200px;
   filter: drop-shadow(3px 3px 5px #000000);
 }
+
+.headingTitle {
+  position: absolute;
+  left: 50%;
+  top: 19%;
+  transform: translate(-50%, -50%);
+  font-size: 6rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
