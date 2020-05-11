@@ -21,3 +21,17 @@ body {
   background-color: black;
   background-image: url('./binding-dark.png');
 }
+
+.navbar {
+  height: 80px;
+  background-color: red;
+}
+
+.links {
+  background-color: blue;
+}
+
+.link {
+  display: inline-block;
+  margin: 20px;
+}
