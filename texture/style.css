@@ -24,14 +24,18 @@ body {
 
 .navbar {
   height: 80px;
-  background-color: red;
 }
 
 .links {
-  background-color: blue;
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+  height: 80px;
 }
 
 .link {
   display: inline-block;
-  margin: 20px;
+  margin-top: 35px;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
