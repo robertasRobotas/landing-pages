@@ -61,7 +61,7 @@ body {
 }
 
 .primaryText {
-  font-size: 4rem;
+  font-size: 3.9rem;
   display: block;
   letter-spacing: 1.5rem;
   text-align: center;
@@ -203,8 +203,8 @@ body {
   padding-bottom: 3rem;
   background-image: linear-gradient(
       to right bottom,
-      rgba(241, 235, 200, 0.6),
-      rgba(196, 131, 0, 0.3)
+      rgba(241, 235, 200, 0.397),
+      rgba(196, 131, 0, 0.089)
     ),
     url('./images/noise.png');
   text-align: center;
@@ -228,6 +228,11 @@ body {
   border: 1px solid rgb(211, 211, 211);
 }
 
+.premiumPlan {
+  bottom: 25px;
+  border: 1px solid rgb(211, 211, 211);
+}
+
 .pageText {
   font-size: 2.5rem;
   text-align: center;
@@ -241,7 +246,7 @@ body {
 .contactsPage {
   padding-top: 10vh;
   position: relative;
-  height: 97vh;
+  height: 98vh;
 }
 
 .planTitle {
@@ -346,6 +351,9 @@ body {
     display: block;
     margin: auto;
     margin-bottom: 10rem;
+  }
+  .premiumPlan {
+    bottom: 0px;
   }
 }
 
