@@ -199,7 +199,8 @@ body {
 
 .plansWrapper {
   display: block;
-  padding-top: 3rem;
+  margin-top: 4rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
   background-image: linear-gradient(
       to right bottom,
