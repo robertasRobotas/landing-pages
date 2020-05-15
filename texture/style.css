@@ -16,6 +16,12 @@ body {
   color: #777;
 }
 
+a {
+  text-decoration: none;
+  margin: 0;
+  color: rgb(189, 186, 186);
+}
+
 .headerPage {
   height: 100vh;
   background-color: black;
