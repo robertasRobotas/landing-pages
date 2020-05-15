@@ -22,7 +22,7 @@ a {
   color: rgb(189, 186, 186);
 }
 
-.headerPage {
+.page {
   height: 100vh;
   background-image: linear-gradient(
       to right bottom,
@@ -39,13 +39,13 @@ a {
 .links {
   display: inline-block;
   float: right;
-  margin-right: 30px;
+  margin-right: 90px;
   height: 80px;
 }
 
 .link {
   display: inline-block;
   margin-top: 35px;
-  margin-left: 20px;
+  margin-left: 25px;
   text-transform: uppercase;
 }
