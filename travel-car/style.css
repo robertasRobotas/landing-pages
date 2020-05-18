@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Vollkorn', serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: normal;
   line-height: 1.7;
   color: #777;
@@ -63,24 +63,25 @@ a {
 }
 
 .headerImage {
-  height: 90vh;
+  height: 80vh;
 }
 
 .headerText {
   position: absolute;
-  left: 18%;
-  top: 16%;
+  left: 68%;
+  top: 22%;
   line-height: 75px;
+  transform: translate(-50%, -50%);
 }
 
 .smallerText {
-  font-size: 90px;
+  font-size: 60px;
   letter-spacing: 6px;
   color: rgb(255, 255, 255);
 }
 
 .biggerText {
-  font-size: 90px;
+  font-size: 70px;
   letter-spacing: 16px;
   text-align: right;
   color: rgb(216, 165, 71);
