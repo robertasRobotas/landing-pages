@@ -45,7 +45,18 @@ a {
 
 .link {
   display: inline-block;
-  margin-top: 35px;
+  margin-top: 45px;
   margin-left: 25px;
   text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.headerImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-2deg);
+  width: 50%;
+  max-width: 800px;
+  filter: drop-shadow(3px 3px 5px #000000);
 }
