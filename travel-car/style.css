@@ -32,9 +32,11 @@ a {
   position: relative;
   height: 44px;
   width: 50px;
-  background-color: black;
   cursor: pointer;
   text-align: left;
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 
 .burger-line {
@@ -42,7 +44,7 @@ a {
   top: 50%;
   height: 3px;
   width: 30px;
-  background: white;
+  background: #343b32;
   transform: (-50%, -50%);
 }
 .burger-line:before {
@@ -50,7 +52,7 @@ a {
   position: absolute;
   height: 3px;
   width: 45px;
-  background: white;
+  background: #343b32;
   top: -12px;
 }
 .burger-line:after {
@@ -58,7 +60,7 @@ a {
   position: absolute;
   height: 3px;
   width: 15px;
-  background: white;
+  background: #343b32;
   top: 12px;
 }
 
