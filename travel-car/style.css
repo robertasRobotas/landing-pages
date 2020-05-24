@@ -75,6 +75,9 @@ a {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+
+  animation: appear;
+  animation-duration: 2s;
 }
 
 .headerText {
@@ -88,6 +91,9 @@ a {
   font-size: 60px;
   letter-spacing: 6px;
   color: rgb(255, 255, 255);
+
+  animation: appear;
+  animation-duration: 5s;
 }
 
 .companyName {
@@ -97,6 +103,9 @@ a {
   font-size: 50px;
   color: rgb(255, 255, 255);
   letter-spacing: 10px;
+
+  animation: appear;
+  animation-duration: 6s;
 }
 
 .slider {
@@ -107,4 +116,35 @@ a {
   height: 100vh;
   background: rgb(226, 188, 132);
   z-index: -2;
+
+  animation: moveToRight;
+  animation-duration: 2s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
