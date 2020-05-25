@@ -14,6 +14,7 @@ body {
   font-weight: normal;
   line-height: 1.7;
   color: #777;
+  overflow-x: hidden;
 }
 
 a {
@@ -75,7 +76,6 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
 
   animation: appear;
   animation-duration: 2s;
@@ -92,6 +92,7 @@ a {
   font-size: 60px;
   letter-spacing: 6px;
   color: rgb(255, 255, 255);
+  z-index: 1;
 
   animation: appear;
   animation-duration: 5s;
@@ -104,6 +105,7 @@ a {
   font-size: 50px;
   color: rgb(255, 255, 255);
   letter-spacing: 10px;
+  z-index: 1;
 
   animation: appear;
   animation-duration: 6s;
@@ -123,11 +125,11 @@ a {
   animation-duration: 1.2s;
 }
 
-.menu {
+.navigation {
   position: absolute;
   height: 100%;
   width: 300px;
-  background-color: rgba(119, 119, 119, 0.281);
+  background-color: rgba(119, 119, 119, 0.26);
   right: 0px;
   text-decoration: none;
 }
@@ -178,4 +180,5 @@ a {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-size: 0.8rem;
+  cursor: pointer;
 }
