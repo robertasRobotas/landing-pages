@@ -129,6 +129,7 @@ a {
   width: 300px;
   background-color: rgba(119, 119, 119, 0.281);
   right: 0px;
+  text-decoration: none;
 }
 
 @keyframes appear {
@@ -157,4 +158,10 @@ a {
   100% {
     transform: translateX(100%);
   }
+}
+
+ul {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
