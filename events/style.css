@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+  line-height: 1.7;
+  color: #777;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  color: rgb(189, 186, 186);
+}
+
+.page {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.103),
+      rgba(255, 255, 255, 0.144)
+    ),
+    url('./texture.png');
+}
+
+.navbar {
+  height: 80px;
+}
+
+.links {
+  display: inline-block;
+  float: right;
+  margin-right: 90px;
+  height: 80px;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 35px;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
