@@ -48,6 +48,7 @@ nav {
   padding: 2em;
   width: calc(100% - 4em);
   height: calc(100% - 4em);
+  display: none;
 }
 
 nav .closeButton {
@@ -79,5 +80,13 @@ nav ul span {
   font-size: 0.8rem;
   display: block;
   margin-top: 10px;
+}
+
+.showMenu {
+  display: block;
+}
+
+.hideMenu {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

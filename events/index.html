@@ -16,7 +16,12 @@
 
   <body>
     <nav id="overlay">
-      <img src="./cross.svg" alt="close" class="closeButton" id="closeMenu" />
+      <img
+        src="./cross.svg"
+        alt="close"
+        class="closeButton"
+        id="closeMenuButton"
+      />
 
       <ul>
         <li>
@@ -41,11 +46,27 @@
     <header>
       <a href="#" class="logo">events</a>
 
-      <img src="./Burger.svg" class="burger" id="openMenu" />
+      <img src="./Burger.svg" class="burger" id="openMenuButton" />
 
       <section>
         <h1>this is events</h1>
       </section>
     </header>
+    <script>
+      let overlay = document.getElementById('overlay');
+      let closeMenuButton = document.getElementById('closeMenuButton');
+
+      document
+        .getElementById('openMenuButton')
+        .addEventListener('click', () => {
+          overlay.classList.add('showMenu');
+          overlay.classList.remove('hideMenu');
+        });
+
+      closeMenuButton.addEventListener('click', () => {
+        overlay.classList.add('hideMenu');
+        overlay.classList.remove('showMenu');
+      });
+    </script>
   </body>
 </html>
