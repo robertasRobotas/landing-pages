@@ -40,3 +40,27 @@ section {
     }
   }
 }
+
+nav {
+  position: absolute;
+  background: black;
+  padding: 2em;
+  width: calc(100% - 4em);
+  height: calc(100% - 4em);
+
+  .closeButton {
+    width: 30px;
+    float: right;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 10% auto 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    width: 80%;
+  }
+}

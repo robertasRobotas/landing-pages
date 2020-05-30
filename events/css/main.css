@@ -41,4 +41,30 @@ section h1::before {
   border-top: 5px solid #505050;
   display: block;
 }
+
+nav {
+  position: absolute;
+  background: black;
+  padding: 2em;
+  width: calc(100% - 4em);
+  height: calc(100% - 4em);
+}
+
+nav .closeButton {
+  width: 30px;
+  float: right;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10% auto 0 auto;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  text-align: center;
+  width: 80%;
+}
 /*# sourceMappingURL=main.css.map */
