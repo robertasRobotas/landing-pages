@@ -62,5 +62,18 @@ nav {
     grid-template-columns: repeat(4, auto);
     text-align: center;
     width: 80%;
+
+    a {
+      color: white;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    span {
+      color: white;
+      font-size: 0.8rem;
+      display: block;
+      margin-top: 10px;
+    }
   }
 }
