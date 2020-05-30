@@ -18,7 +18,7 @@ header {
   }
 
   .burger {
-    width: 18px;
+    width: 30px;
     float: right;
     cursor: pointer;
   }
@@ -30,6 +30,13 @@ section {
   h1 {
     font-size: 4em;
     margin: 1em auto;
-    width: 70%;
+    width: 50%;
+    text-align: center;
+
+    &::before {
+      content: '';
+      border-top: 5px solid rgb(80, 80, 80);
+      display: block;
+    }
   }
 }
