@@ -60,10 +60,14 @@
         .getElementById('openMenuButton')
         .addEventListener('click', () => {
           overlay.classList.add('showMenu');
+          overlay.classList.remove('closeMenu');
         });
 
       closeMenuButton.addEventListener('click', () => {
-        overlay.classList.remove('showMenu');
+        overlay.classList.add('closeMenu');
+        setTimeout(function () {
+          overlay.classList.remove('showMenu');
+        }, 400);
       });
     </script>
   </body>
