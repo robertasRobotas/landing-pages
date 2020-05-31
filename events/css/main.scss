@@ -54,6 +54,7 @@ nav {
     width: 30px;
     float: right;
     cursor: pointer;
+    opacity: 0;
   }
 
   ul {
@@ -78,6 +79,10 @@ nav {
       margin-top: 10px;
     }
   }
+
+  li {
+    opacity: 0;
+  }
 }
 
 .showMenu {
@@ -86,6 +91,22 @@ nav {
 
   .closeButton {
     animation: showCross 1s 1s forwards;
+  }
+
+  li:nth-of-type(1) {
+    animation: menuItems 1s 1s forwards;
+  }
+
+  li:nth-of-type(2) {
+    animation: menuItems 1.2s 1s forwards;
+  }
+
+  li:nth-of-type(3) {
+    animation: menuItems 1.4s 1s forwards;
+  }
+
+  li:nth-of-type(4) {
+    animation: menuItems 1.6s 1s forwards;
   }
 }
 
@@ -99,10 +120,21 @@ nav {
 }
 
 @keyframes showCross {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
+  }
+}
+
+@keyframes menuItems {
+  from {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
