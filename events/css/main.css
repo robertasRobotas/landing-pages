@@ -49,6 +49,8 @@ nav {
   width: calc(100% - 4em);
   height: calc(100% - 4em);
   display: none;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 nav .closeButton {
@@ -84,9 +86,52 @@ nav ul span {
 
 .showMenu {
   display: block;
+  -webkit-animation: slideMenu 1s ease-in;
+          animation: slideMenu 1s ease-in;
 }
 
-.hideMenu {
-  display: none;
+.showMenu .closeButton {
+  -webkit-animation: showCross 1s 1s forwards;
+          animation: showCross 1s 1s forwards;
+}
+
+@-webkit-keyframes slideMenu {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes slideMenu {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes showCross {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showCross {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

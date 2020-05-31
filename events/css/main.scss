@@ -48,6 +48,7 @@ nav {
   width: calc(100% - 4em);
   height: calc(100% - 4em);
   display: none;
+  transform-origin: right;
 
   .closeButton {
     width: 30px;
@@ -81,8 +82,27 @@ nav {
 
 .showMenu {
   display: block;
+  animation: slideMenu 1s ease-in;
+
+  .closeButton {
+    animation: showCross 1s 1s forwards;
+  }
 }
 
-.hideMenu {
-  display: none;
+@keyframes slideMenu {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes showCross {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
