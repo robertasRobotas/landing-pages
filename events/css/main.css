@@ -10,33 +10,33 @@ html a {
   text-decoration: none;
 }
 
-header {
+section {
   padding: 2em;
 }
 
-header .logo {
+section .logo {
   color: black;
   font-weight: bold;
 }
 
-header .burger {
+section .burger {
   width: 30px;
   float: right;
   cursor: pointer;
 }
 
-section {
+.headerText {
   padding: 4em;
 }
 
-section h1 {
+.headerText h1 {
   font-size: 4em;
   margin: 1em auto;
   width: 50%;
   text-align: center;
 }
 
-section h1::before {
+.headerText h1::before {
   content: '';
   border-top: 5px solid #505050;
   display: block;
