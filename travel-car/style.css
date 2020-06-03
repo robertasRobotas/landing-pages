@@ -128,9 +128,12 @@ a {
   position: absolute;
   height: 100%;
   width: 300px;
-  background-color: rgba(119, 119, 119, 0.26);
+  background-image: url('./camper.png');
+  background-size: cover;
+  background-position: center;
   right: 0px;
   text-decoration: none;
+  backdrop-filter: blur(3);
 }
 
 @keyframes appear {
