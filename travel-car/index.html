@@ -31,10 +31,10 @@
         with CaperLit
       </div>
       <div class="headerImage">
-        <nav class="navigation">
-          <div class="burger">
-            <div class="burger-line"></div>
-          </div>
+        <div class="burger" id="burger">
+          <div class="burger-line"></div>
+        </div>
+        <nav class="navigation" id="menu">
           <ul class="menuLinks">
             <li class="menuLink">About Us</li>
             <li class="menuLink">Our Cars</li>
@@ -44,5 +44,14 @@
       </div>
     </header>
     <div class="slider"></div>
+
+    <script>
+      let burger = document.getElementById('burger');
+      let menu = document.getElementById('menu');
+
+      burger.addEventListener('click', () => {
+        menu.classList.add('showMenu');
+      });
+    </script>
   </body>
 </html>
