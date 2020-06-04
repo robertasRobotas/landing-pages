@@ -48,9 +48,18 @@
     <script>
       let burger = document.getElementById('burger');
       let menu = document.getElementById('menu');
+      let menuStatus = false;
 
       burger.addEventListener('click', () => {
-        menu.classList.add('showMenu');
+        if(!menuStatus){
+          menu.classList.add('showMenu');
+          menuStatus = true;
+          console.log('on');
+        }else{
+          menu.classList.remove('showMenu');
+          menuStatus = false;
+                    console.log('off');
+        }
       });
     </script>
   </body>
