@@ -52,13 +52,15 @@
 
       burger.addEventListener('click', () => {
         if(!menuStatus){
+          menu.classList.remove('closeMenu');
           menu.classList.add('showMenu');
           menuStatus = true;
-          console.log('on');
         }else{
+          menu.classList.add('closeMenu');
+          setTimeout(() => {
           menu.classList.remove('showMenu');
           menuStatus = false;
-                    console.log('off');
+          }, 1000);
         }
       });
     </script>

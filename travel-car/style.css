@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -21,7 +20,7 @@ body {
 a {
   text-decoration: none;
   margin: 0;
-  color: #bdbaba;
+  color: rgb(189, 186, 186);
 }
 
 .page {
@@ -48,10 +47,8 @@ a {
   height: 3px;
   width: 30px;
   background: #343b32;
-  -webkit-transform: -50%, -50%;
-          transform: -50%, -50%;
+  transform: (-50%, -50%);
 }
-
 .burger-line:before {
   content: '';
   position: absolute;
@@ -60,7 +57,6 @@ a {
   background: #343b32;
   top: -12px;
 }
-
 .burger-line:after {
   content: '';
   position: absolute;
@@ -71,7 +67,7 @@ a {
 }
 
 .headerImage {
-  background-image: url("./camper.png");
+  background-image: url('./camper.png');
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -79,12 +75,9 @@ a {
   width: 100%;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation: appear;
-          animation: appear;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  transform: translate(-50%, -50%);
+
+  animation: appear;
 }
 
 .headerText {
@@ -92,17 +85,14 @@ a {
   left: 50%;
   top: 22%;
   line-height: 75px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: inline;
   font-size: 60px;
   letter-spacing: 6px;
-  color: white;
+  color: rgb(255, 255, 255);
   z-index: 1;
-  -webkit-animation: appear;
-          animation: appear;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+
+  animation: appear 5s;
 }
 
 .companyName {
@@ -110,13 +100,11 @@ a {
   left: 18%;
   top: 78%;
   font-size: 50px;
-  color: white;
+  color: rgb(255, 255, 255);
   letter-spacing: 10px;
   z-index: 1;
-  -webkit-animation: appear;
-          animation: appear;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+
+  animation: appear 6s;
 }
 
 .slider {
@@ -125,14 +113,11 @@ a {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #e2bc84;
+  background: rgb(226, 188, 132);
   z-index: -2;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-animation: moveToRight;
-          animation: moveToRight;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
+  transform: translateX(100%);
+
+  animation: moveToRight 1.2s;
 }
 
 .navigation {
@@ -140,68 +125,26 @@ a {
   height: 100%;
   width: 300px;
   background-color: rgba(119, 119, 119, 0.26);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   right: 0px;
   text-decoration: none;
+
   display: none;
-  -webkit-animation: appear;
-          animation: appear;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+
 }
 
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes moveToRight {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  30% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-}
 
 @keyframes moveToRight {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
+
   30% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
+
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
@@ -211,8 +154,7 @@ a {
   margin: 0;
   list-style-type: none;
   margin-top: 160px;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
+  align-content: space-evenly;
 }
 
 .menuLink {
@@ -229,14 +171,30 @@ a {
 
 .showMenu {
   display: block;
+  animation: menuAppear 0.4s ease-in forwards;
+
+
 }
 
-@keyframes appear {
+.closeMenu {
+  animation: menuDisappear 0.4s ease-in forwards;
+}
+
+@keyframes menuAppear {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@keyframes menuDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
