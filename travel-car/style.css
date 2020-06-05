@@ -167,6 +167,7 @@ a {
   text-transform: uppercase;
   font-size: 0.8rem;
   cursor: pointer;
+  user-select: none;
 }
 
 .showMenu {
