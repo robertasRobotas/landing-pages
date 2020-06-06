@@ -83,16 +83,15 @@ a {
 
 .headerText {
   position: absolute;
-  left: 35%;
-  top: 30%;
+  left: 12%;
+  top: 25%;
   line-height: 75px;
-  transform: translate(-50%, -50%);
   display: inline;
   font-size: 45px;
-  letter-spacing: 6px;
+  letter-spacing: 8px;
   color: rgb(255, 255, 255);
   z-index: 1;
-  width: 700px;
+  width: auto;
   font-family:helvetica;
 
   animation: appear 5s;
@@ -100,14 +99,16 @@ a {
 
 .companyName {
   position: absolute;
-  left: 32%;
+  left: 40%;
   top: 78%;
   font-size: 50px;
   color: rgb(255, 255, 255);
   letter-spacing: 10px;
   z-index: 1;
   font-family:helvetica;
-font-size: 25px;
+  font-size: 25px;
+  width: auto;
+
 
   animation: appear 6s;
 }
@@ -204,3 +205,26 @@ font-size: 25px;
     opacity: 0;
   }
 }
+
+
+@media only screen and (max-width: 1180px) {
+   .headerText{
+    font-size: 35px;
+    left: 10%;
+    width: auto;
+  }
+  .companyName {
+        left: 30%;
+  }
+
+}
+
+
+@media only screen and (max-width: 980px) {
+   .headerText{
+      color:green;
+    }
+
+}
+
+
