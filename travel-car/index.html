@@ -24,10 +24,10 @@
     <script src="app.js"></script>
 
     <header class="page">
-      <div class="headerText">
+      <div class="headerText" id="headerText">
         DRIVE AROUND EUROPE
       </div>
-      <div class="companyName">
+      <div class="companyName" id="companyName">
         with CaperLit
       </div>
       <div class="headerImage">
@@ -48,17 +48,32 @@
     <script>
       let burger = document.getElementById('burger');
       let menu = document.getElementById('menu');
+      let headerText = document.getElementById('headerText');
+      let companyName = document.getElementById('companyName');
+
+
       let menuStatus = false;
 
       burger.addEventListener('click', () => {
         if(!menuStatus){
           menu.classList.remove('closeMenu');
           menu.classList.add('showMenu');
+          headerText.classList.remove('sharpText');
+          companyName.classList.remove('sharpText');
+          headerText.classList.add('blurText');
+          companyName.classList.add('blurText');
+          
           menuStatus = true;
         }else{
           menu.classList.add('closeMenu');
+          headerText.classList.add('sharpText');
+          companyName.classList.add('sharpText');
+
           setTimeout(() => {
           menu.classList.remove('showMenu');
+          headerText.classList.remove('blurText');
+          companyName.classList.remove('blurText');
+
           menuStatus = false;
           }, 400);
         }

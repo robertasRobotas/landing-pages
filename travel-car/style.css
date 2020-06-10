@@ -97,8 +97,9 @@ a {
   z-index: 1;
   width: auto;
   font-family:helvetica;
+  background:red;
 
-  animation: appear 5s;
+  animation: appear 3s;
 }
 
 .companyName {
@@ -165,6 +166,7 @@ a {
   list-style-type: none;
   margin-top: 180px;
   align-content: space-evenly;
+  background:blue;
 }
 
 .menuLink {
@@ -182,16 +184,42 @@ a {
 
 .showMenu {
   display: block;
-  animation: menuAppear 0.4s ease-in forwards;
-
-
+  animation: appear 0.4s ease-in forwards;
 }
 
 .closeMenu {
-  animation: menuDisappear 0.4s ease-in forwards;
+  animation: disappear 0.4s ease-in forwards;
 }
 
-@keyframes menuAppear {
+.blurText {
+  animation: blur 1s forwards !important;
+}
+
+.sharpText {
+  animation: reverseBlur 1s forwards !important;
+}
+
+@keyframes reverseBlur {
+  0% {
+    filter: blur(6px);
+  }
+
+  100% {
+    filter: blur(0);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(0);
+  }
+
+  100% {
+    filter: blur(6px);
+  }
+}
+
+@keyframes appear {
   0% {
     opacity: 0;
   }
@@ -201,7 +229,7 @@ a {
   }
 }
 
-@keyframes menuDisappear {
+@keyframes disappear {
   0% {
     opacity: 1;
   }
@@ -242,6 +270,11 @@ a {
 
    .navigation{
      width:100%;
+   }
+
+   .menuLinks {
+     margin-top: 100px;  
+     z-index:10;
    }
 
 }
