@@ -43,7 +43,7 @@ a {
   float: right;
   margin-right: 60px;
   margin-top: 50px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .burger-line {
@@ -87,12 +87,12 @@ a {
 
 .headerText {
   position: absolute;
-  left: 12%;
+  left: 5%;
   top: 25%;
   line-height: 75px;
   display: inline;
-  font-size: 45px;
-  letter-spacing: 8px;
+  font-size: 35px;
+  letter-spacing: 20px;
   color: rgb(255, 255, 255);
   z-index: 1;
   width: auto;
@@ -213,9 +213,10 @@ a {
 
 @media only screen and (max-width: 1180px) {
    .headerText{
-    font-size: 35px;
-    left: 10%;
+    font-size: 25px;
+    left: 3%;
     width: auto;
+    letter-spacing: 17px;
   }
   .companyName {
         left: 30%;
@@ -226,6 +227,21 @@ a {
 
 @media only screen and (max-width: 980px) {
    .headerText{
+     width: 400px;
+     left: 50%;
+     top: 30%;
+     transform: translate(-50%, -50%);
+     font-size: 1.8rem;
+     letter-spacing: 40px;
+   }
+
+    .burger{
+    margin-right: 20px;
+    margin-top: 30px;
+   }
+
+   .navigation{
+     width:100%;
    }
 
 }
