@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/TextPlugin.min.js"
+      integrity="sha256-rOqcZ+HBbW3R02DI6nNkkI4N+EvSKaoV/bcnsbXSC3c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gs lap/3.2.6/ScrollToPlugin.min.js.map"
+      integrity="undefined"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+
+    <header class="page">
+      <div class="headerText">
+        DRIVE AROUND EUROPE
+      </div>
+      <div class="companyName">
+        with CaperLit
+      </div>
+      <div class="headerImage">
+        <div class="burger" id="burger">
+          <div class="burger-line"></div>
+        </div>
+        <nav class="navigation" id="menu">
+          <ul class="menuLinks">
+            <li class="menuLink"><a href="about.html">ABOUT US</a></li>
+            <li class="menuLink"><a href="cars.html">OUR CARS</a></li>
+            <li class="menuLink"><a href="contacts.html">CONTACTS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="slider"></div>
+
+    <script>
+      let burger = document.getElementById('burger');
+      let menu = document.getElementById('menu');
+      let menuStatus = false;
+
+      burger.addEventListener('click', () => {
+        if(!menuStatus){
+          menu.classList.remove('closeMenu');
+          menu.classList.add('showMenu');
+          menuStatus = true;
+        }else{
+          menu.classList.add('closeMenu');
+          setTimeout(() => {
+          menu.classList.remove('showMenu');
+          menuStatus = false;
+          }, 400);
+        }
+      });
+    </script>
+  </body>
+</html>
