@@ -18,6 +18,7 @@ body {
   color: #777;
   overflow-x: hidden;
   position:relative;
+  min-height: 500px;
 
 }
 
@@ -72,6 +73,8 @@ a {
 }
 
 .headerImage {
+  position:relative;
+  min-height: 500px;
   background-image: url('./camper.png');
   background-size: cover;
   background-position: center;
@@ -88,10 +91,10 @@ a {
 .headerText {
   position: absolute;
   left: 5%;
-  top: 25%;
+  top: 22%;
   line-height: 75px;
   display: inline;
-  font-size: 35px;
+  font-size: 1.8em;
   letter-spacing: 20px;
   color: rgb(255, 255, 255);
   width: auto;
@@ -236,27 +239,14 @@ a {
 }
 
 
-@media only screen and (max-width: 1180px) {
-   .headerText{
-    font-size: 25px;
-    left: 3%;
-    width: auto;
-    letter-spacing: 17px;
-  }
-  .companyName {
-        left: 30%;
-  }
-
-}
-
 
 @media only screen and (max-width: 980px) {
    .headerText{
      width: 400px;
      left: 50%;
-     top: 30%;
+     top: 25%;
      transform: translate(-50%, -50%);
-     font-size: 1.8rem;
+     font-size: 1.2rem;
      letter-spacing: 40px;
    }
 
@@ -270,10 +260,18 @@ a {
    }
 
    .menuLinks {
-     margin-top: 25%;  
+     margin-top: 15vh;  
      z-index:10;
    }
 
 }
 
+@media only screen and (max-width: 500px) {
+   .headerText{
+     width: 180px;
+     font-size: 0.8rem;
+     letter-spacing: 20px;
+     line-height: 50px;
+   }
+}
 
