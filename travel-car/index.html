@@ -55,13 +55,16 @@
       let menuStatus = false;
 
       burger.addEventListener('click', () => {
+
         if(!menuStatus){
           menu.classList.remove('closeMenu');
           menu.classList.add('showMenu');
-          headerText.classList.remove('sharpText');
+          if(window.innerWidth <= 1100){
+                      headerText.classList.remove('sharpText');
           companyName.classList.remove('sharpText');
-          headerText.classList.add('blurText');
-          companyName.classList.add('blurText');
+            headerText.classList.add('blurText');
+            companyName.classList.add('blurText');
+          }
           
           menuStatus = true;
         }else{
